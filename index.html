@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>calculator</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Simple calculator</h1>
+    </header>
+    <main>
+      <section id="inputs">
+        <div><label for="firstNumber"></label><input type="number" name="firstNumber" id="inputOne" min="0"></div>
+        <div><label for="secondNumber"></label><input type="number" name="secondNumber" id="inputTwo" min="0"></div>
+      </section>
+      <section id="operators">
+        <div>
+          <button id="add">Add number</button>
+          <button id="time">Multiplie number</button>
+        </div>
+        <div>
+          <button id="susb">Substrac number</button>
+          <button id="div">Divided number</button>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
