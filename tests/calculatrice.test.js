@@ -37,3 +37,25 @@ describe('subtraction', () => {
         expect(soustraction(5, 5)).toBe(0);
     });
 });
+
+describe('division', () => {
+    it('should return the result of dividing two positive numbers', () => {
+        expect(division(10, 2)).toBe(5);
+    });
+
+    it('should return a decimal when dividing numbers that do not divide evenly', () => {
+        expect(division(7, 2)).toBeCloseTo(3.5);
+    });
+
+    it('should return 1 when dividing a number by itself', () => {
+        expect(division(5, 5)).toBe(1);
+    });
+
+    it('should return 0 when dividing 0 by a positive number', () => {
+        expect(division(0, 5)).toBe(0);
+    });
+
+    it('should throw an error when dividing by zero', () => {
+        expect(() => division(5, 0)).toThrow("Cannot divide by zero");
+    });
+})
