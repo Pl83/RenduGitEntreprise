@@ -1,0 +1,24 @@
+name: Deploy to Vercel on Release
+
+on:
+  release:
+    types: [published]  # Déclenche le workflow uniquement lors de la publication d'une release
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install  # ou yarn install si tu utilises Yarn
+
+      - name: Build project
+        run: npm run build  # assure-toi que ton projet est bien configuré pour se builder
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel --prod  # Déploie en production
