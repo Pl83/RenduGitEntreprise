@@ -23,3 +23,17 @@ describe('multiplication test', () => {
         expect(multiplication(175,32)).toEqual(5600)
     })
 })
+
+describe('subtraction', () => {
+    it('should return the difference of two positive numbers', () => {
+        expect(soustraction(10, 5)).toBe(5);
+    });
+
+    it('should return a negative number if the first number is smaller', () => {
+        expect(soustraction(1758, 220)).toBe(1538);
+    });
+
+    it('should return zero if both numbers are equal', () => {
+        expect(soustraction(5, 5)).toBe(0);
+    });
+});
