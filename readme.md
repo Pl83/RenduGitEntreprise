@@ -1,7 +1,7 @@
 # Simple calculator
 
 ## What can it do ?
-can performe basic math operation such as additions, substractions, multiplications and divisions.
+Can perform basic math operations such as additions, subtractions, multiplications and divisions.
 
 ## Our Team Members
 
