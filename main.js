@@ -1,9 +1,6 @@
-const subsBtn = document.getElementById('susb');
+import {soustraction} from "./source.js";
 
-function soustraction(a, b) {
-  let c = (a) - (b);
-  return c ;
-};
+const subsBtn = document.getElementById('susb');
 
 subsBtn.addEventListener('onclick', () => {
   let nbmOne = document.getElementById('inputOne').value;
