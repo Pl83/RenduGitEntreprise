@@ -1,37 +1,34 @@
 import {multiplication, division, addition, soustraction} from './source.js';
 
-
 const subsBtn = document.getElementById('susb');
 const timeBtn = document.getElementById('time');
 const divBtn = document.getElementById('div');
 const addBtn = document.getElementById('add');
 
-subsBtn.addEventListener('onclick', () => {
-  let nbmOne = document.getElementById('inputOne').value;
-  let nbmTwo = document.getElementById('inputTwo').value;
+function getNumber() {
+  let nbmOne = parseInt(document.getElementById('inputOne').value);
+  let nbmTwo = parseInt(document.getElementById('inputTwo').value);
+  return [nbmOne, nbmTwo]
+}
 
-  soustraction(nbmOne, nbmTwo);
+subsBtn.addEventListener('click', () => {
+  let [a, b] = getNumber();
+  alert("The result is " + soustraction(a, b));
  });
 
 
-timeBtn.addEventListener('onclick', () => {
-  let nbmOne = document.getElementById('inputOne').value;
-  let nbmTwo = document.getElementById('inputTwo').value;
-
-  multiplication(nbmOne, nbmTwo);
+timeBtn.addEventListener('click', () => {
+  let [a, b] = getNumber();
+  alert("The result is " + multiplication(a, b));
 });
 
 
-divBtn.addEventListener('onclick', () => {
-  let nbmOne = document.getElementById('inputOne').value;
-  let nbmTwo = document.getElementById('inputTwo').value;
-
-  division(nbmOne, nbmTwo);
+divBtn.addEventListener('click', () => {
+  let [a, b] = getNumber();
+  alert("The result is " + division(a, b));
 });
 
-addBtn.addEventListener('onclick', () => {
-  let nbmOne = document.getElementById('inputOne').value;
-  let nbmTwo = document.getElementById('inputTwo').value;
-
-  addition(nbmOne, nbmTwo);
+addBtn.addEventListener('click', () => {
+  let [a, b] = getNumber();
+  alert("The result is " + addition(a, b));
 });
