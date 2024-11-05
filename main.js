@@ -1,7 +1,8 @@
-import {multiplication, division} from './source.js';
+import {multiplication, division, addition} from './source.js';
 
 const timeBtn = document.getElementById('time');
 const divBtn = document.getElementById('div');
+const addBtn = document.getElementById('add');
 
 
 timeBtn.addEventListener('onclick', () => {
@@ -19,3 +20,9 @@ divBtn.addEventListener('onclick', () => {
   division(nbmOne, nbmTwo);
 });
 
+addBtn.addEventListener('onclick', () => {
+  let nbmOne = document.getElementById('inputOne').value;
+  let nbmTwo = document.getElementById('inputTwo').value;
+
+  addition(nbmOne, nbmTwo);
+});

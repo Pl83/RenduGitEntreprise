@@ -1,3 +1,8 @@
+function addition(a, b) {
+  let c = (a) + (b);
+    return c ;
+};
+
 function multiplication(a, b) {
     let c = (a) * (b);
     return c ;
@@ -13,4 +18,4 @@ function division(a, b) {
     
 };
 
-export { multiplication, division };
+export { multiplication, division, addition };
