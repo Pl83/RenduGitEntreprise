@@ -1,5 +1,10 @@
 name: Deploy to Vercel on Release
-
+env:
+  #THIS IS PROJECT INFORMATION WHICH COMES FROM .VERCEL/PROJECT.JSON FILE.
+  # THIS KEY VALUE STORE IN GITHUB ACTION. 
+  # GITHUB.COM > SETTINGS > SECRETS AND VARIABLES > ACTIONS > REPOSITORY SECRETS.
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
   release:
     types: [published]  # Déclenche le workflow uniquement lors de la publication d'une release
@@ -18,7 +23,5 @@ jobs:
       - name: Build project
         run: npm run build  # assure-toi que ton projet est bien configuré pour se builder
 
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --prod --yes --token $VERCEL_TOKEN  # Déploie en production
+      - name: Deploy Project to Vercel  
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
