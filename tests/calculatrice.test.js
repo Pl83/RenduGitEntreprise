@@ -1,16 +1,8 @@
 import {describe, it, expect} from "vitest";
+import {multiplication} from '../source.js';
 
-describe('addition test', () => {
 
-    it ('simple addition', () => {
 
-        expect(addition(1,1)).toEqual(2)
-    })
-
-    it ('addition little more harder', () => {
-        expect(addition(175,32)).toEqual(207)
-    })
-})
 
 describe('multiplication test', () => {
 

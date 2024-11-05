@@ -1,9 +1,6 @@
-const timeBtn = document.getElementById('time');
+import {multiplication} from './source.js';
 
-function multiplication(a, b) {
-  let c = (a) * (b);
-  return c ;
-};
+const timeBtn = document.getElementById('time');
 
 timeBtn.addEventListener('onclick', () => {
   let nbmOne = document.getElementById('inputOne').value;
