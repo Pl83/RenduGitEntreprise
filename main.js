@@ -25,7 +25,11 @@ timeBtn.addEventListener('click', () => {
 
 divBtn.addEventListener('click', () => {
   let [a, b] = getNumber();
-  alert("The result is " + division(a, b));
+  try {
+    alert("The result is " + division(a, b));
+  } catch (Error){
+    alert("Can't divide by 0")
+  };
 });
 
 addBtn.addEventListener('click', () => {
