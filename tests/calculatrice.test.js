@@ -1,4 +1,5 @@
 import {describe, it, expect} from "vitest";
+import { division, multiplication, addition, soustraction } from "../source.js" 
 
 describe('addition test', () => {
 
