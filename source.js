@@ -1,3 +1,8 @@
+function soustraction(a, b) {
+    let c = (a) - (b);
+    return c ;
+};
+
 function addition(a, b) {
   let c = (a) + (b);
     return c ;
@@ -18,4 +23,4 @@ function division(a, b) {
     
 };
 
-export { multiplication, division, addition };
+export { multiplication, division, addition, soustraction };

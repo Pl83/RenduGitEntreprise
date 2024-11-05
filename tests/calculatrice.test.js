@@ -2,7 +2,6 @@ import {describe, it, expect} from "vitest";
 import { division, multiplication, addition, soustraction } from "../source.js" 
 
 
-
 describe('multiplication test', () => {
 
     it ('simple multiplication', () => {
