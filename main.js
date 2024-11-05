@@ -11,3 +11,5 @@ divBtn.addEventListener('onclick', () => {
 
   division(nbmOne, nbmTwo);
 });
+
+export { division, multiplication, addition, soustraction };
