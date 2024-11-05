@@ -1,9 +1,6 @@
-const divBtn = document.getElementById('div');
+import { division } from "./source.js";
 
-function division(a, b) {
-  let c = (a) / (b);
-  return c ;
-};
+const divBtn = document.getElementById('div');
 
 divBtn.addEventListener('onclick', () => {
   let nbmOne = document.getElementById('inputOne').value;
@@ -12,4 +9,3 @@ divBtn.addEventListener('onclick', () => {
   division(nbmOne, nbmTwo);
 });
 
-export { division, multiplication, addition, soustraction };
