@@ -5,7 +5,17 @@ Can perform basic math operations such as additions, subtractions, multiplicatio
 
 ## Our Team Members
 
+
 | Name         | First Name   | Grade |
 |--------------|--------------|-------|
 | Delcroix     | Ethan        | 20/20 |
 | Sans         | Pierre-Louis | 20/20 |
+
+## Install & deploy in local
+- `git clone git@github.com:Pl83/RenduGitEntreprise.git`
+- cd RenduGitEntreprise
+- npm i
+- npm run dev
+
+## Vercel 
+Click here to access the <a href="#">Vercel</a>
