@@ -21,4 +21,4 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --prod --yes --token $VERCEL_TOKEN  # Déploie en production
+        run: npx vercel --prod --yes -p git_entreprise_render # Déploie en production
