@@ -1,6 +1,5 @@
 import {describe, it, expect} from "vitest";
-import {multiplication} from '../source.js';
-
+import { division, multiplication, addition, soustraction } from "../source.js" 
 
 
 
