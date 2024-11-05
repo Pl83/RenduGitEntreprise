@@ -1,9 +1,6 @@
-const addBtn = document.getElementById('add');
+import {addition} from "./source.js"
 
-function addition(a, b) {
-  let c = (a) + (b);
-  return c ;
-};
+const addBtn = document.getElementById('add');
 
 addBtn.addEventListener('onclick', () => {
   let nbmOne = document.getElementById('inputOne').value;
